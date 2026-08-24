@@ -21,4 +21,24 @@ void main() {
   bool acerto;
   acerto = true;
   print(acerto);  
+
+  String text = 'Amanda';
+  int i = 23;
+  double numero = 1.66;
+
+  print('Meu nome é: $text');
+  print('Idade: $i');
+  print('Altura: $numero');
+
+  int a = 10;
+  int b = 2;
+  int soma = a + b;
+
+  print(soma);
+
+  dynamic age;
+  age = 'amanda';
+  age = 23;
+
+  print(age);
 }
