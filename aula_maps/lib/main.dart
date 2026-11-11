@@ -51,22 +51,23 @@ class _MyHomePageState extends State<MyHomePage> {
       infoWindow: InfoWindow(title: 'IFPI-Sul'),
     );
 
-    Marker marcadoCasa = const Marker(
-      markerId: MarkerId('Casa'),
-      position: LatLng(-5.104712817654104, -42.74211399323951),
-      infoWindow: InfoWindow(title: 'Casa'),
+    Marker marcadoShopping = const Marker(
+      markerId: MarkerId('Shopping'),
+      position: LatLng(-5.085236135991352, -42.79024444792003),
+      infoWindow: InfoWindow(title: 'Teresina Shopping'),
     );
 
-    Marker marcadoTrabalho = const Marker (
-      markerId: MarkerId('Trabalho'),
-      position: LatLng(-5.08493594499806, -42.80492918023893),
-      infoWindow: InfoWindow(title: 'Trabalho'),
+    Marker marcadoLoja = const Marker(
+      markerId: MarkerId('Loja'),
+      position: LatLng(-5.079978221117165, -42.793659723302),
+      infoWindow: InfoWindow(title: 'Pintos Shopping'),
     );
 
     marcadoresLocal.add(marcadoIfpi);
     marcadoresLocal.add(marcadoIfpiSul);
-    marcadoresLocal.add(marcadoCasa);
-    marcadoresLocal.add(marcadoTrabalho);
+    marcadoresLocal.add(marcadoShopping);
+    marcadoresLocal.add(marcadoLoja);
+    
 
     setState(() {
       _marcadores = marcadoresLocal; // Atualiza a variável de estado
